@@ -1,42 +1,91 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- JQUERY FOR MENU BAR-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <!-- BOOSTRAP SYLE SHEET FOR MENU BAR-->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">  
+<html lang="en">
+  <head>
+    <!-- JQUERY FOR MENU BAR-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- BOOSTRAP SYLE SHEET FOR MENU BAR-->
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
 
-        <link rel="stylesheet" href="/static/css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-        <title>Contact Me</title>
-    </head>
-    <body>
-        <!-- MENU BAR-->
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+    />
+    <title>Contact Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- MENU BAR-->
+    <div class="container-fluid">
+      <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-            <nav class="navbar navbar-inverse">
-              <div class="container-fluid">
-                <ul class="nav navbar-nav">
-                  <li><a id="len1" class="hoverable" href="index.html">Home</a></li>
-                  <li><a id="len2" class="hoverable" href="about.html">About</a></li>
-                  <li><a id="len3" class="hoverable" href="#">Portfolio</a></li>
-                  <li><a id="len4" class="hoverable" href="contact.html">Contact</a></li>
-                </ul>
-              </div>
-            </nav>        
+          <ul class="nav navbar-nav">
+            <li><a id="len1" class="hoverable" href="index.html">Home</a></li>
+            <li><a id="len2" class="hoverable" href="about.html">About</a></li>
+            <li>
+              <a id="len3" class="hoverable" href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a id="len4" class="hoverable" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-        
-        <h1>
-            this is how you can reach me
-        </h1>
-        <p>links to my...</p>
-        <a href="mailto:hannaz@ymail.com"> email</a>
-        <br>
-        <a href="#" target="_blank">linkedin! </a>
-        <br>
-        <a href="https://github.com/hannazavala" target="_blank">github! </a>
-        <br>
-        <a href="https://www.instagram.com/softzey/" target="_blank">instagram! </a>
-        
+      </nav>
+    </div>
 
-    </body>
+    <h1>Let's Connect!</h1>
+
+    <div class="container">
+      <form action="feedback_form.php">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        /><br /><br />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        /><br /><br />
+
+        <label for="email">Your Email*</label>
+        <input
+          type="text"
+          id="email"
+          name="emailaddress"
+          placeholder="Email"
+        /><br /><br />
+
+        <label for="subject">Message</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+        ></textarea
+        ><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <a href="mailto:hannaz@ymail.com" class="btn"> Send me an Email</a>
+    <br />
+    <a href="#" target="_blank" class="btn">Follow me on Linkedin! </a>
+    <br />
+    <a href="https://github.com/hannazavala" target="_blank" class="btn"
+      >Check out my Github!</a
+    >
+    <br />
+
+    <script src="website.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+  </body>
 </html>
